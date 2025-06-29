@@ -3,12 +3,12 @@ let userThreshold = 0.45; // デフォルトのしきい値
 // ボタンを押すと閾値を切り替える
 function toggleThreshold() {
     const button = document.getElementById("thresholdButton");
-    if (userThreshold === 0.45) {
+    if (userThreshold === 0.50) {
         userThreshold = 0.35;
         button.innerText = "通常に戻す";
         document.getElementById("thresholdDisplay").innerText = "甘め";
     } else {
-        userThreshold = 0.45;
+        userThreshold = 0.50;
         button.innerText = "甘めにする";
         document.getElementById("thresholdDisplay").innerText = "通常";
     }
@@ -149,7 +149,7 @@ function drawCircle(ctx, x, y) {
     ctx.strokeStyle = "black"; // 円の色
     ctx.lineWidth = 10; // 線の太さ
     ctx.beginPath();
-    ctx.arc(x, y, 32, 0, 2 * Math.PI); // 半径10pxの円
+    ctx.arc(x, y, 24, 0, 2 * Math.PI); // 半径10pxの円
     ctx.stroke();
 }
 
