@@ -3,12 +3,12 @@ let userThreshold = 0.45; // デフォルトのしきい値
 // ボタンを押すと閾値を切り替える
 function toggleThreshold() {
     const button = document.getElementById("thresholdButton");
-    if (userThreshold === 0.40) {
+    if (userThreshold === 0.45) {
         userThreshold = 0.35;
         button.innerText = "通常に戻す";
         document.getElementById("thresholdDisplay").innerText = "甘め";
     } else {
-        userThreshold = 0.40;
+        userThreshold = 0.45;
         button.innerText = "甘めにする";
         document.getElementById("thresholdDisplay").innerText = "通常";
     }
